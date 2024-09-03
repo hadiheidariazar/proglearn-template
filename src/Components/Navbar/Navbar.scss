@@ -1,0 +1,211 @@
+@import "./../../custom";
+
+.main-header__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0 .7rem;
+
+    .main-header__link {
+        color: #7f8187;
+        font-size: 1.5rem;
+    }
+}
+
+.main-header__logo {
+    width: 10rem;
+    height: 4rem;
+}
+
+
+/* Start DropDown Styles */
+
+.main-header__dropdown {
+    top: 3rem;
+    left: 0;
+    right: 0;
+    transition: all 200ms ease-in-out;
+    box-shadow: 0 0 10px 0 #0000001f;
+    border-radius: 0.5rem;
+    width: 24rem;
+    z-index: 100;
+    border-bottom: 3px solid $primary-color;
+    opacity: 0;
+    visibility: hidden;
+
+
+    .main-header__item:hover & {
+        opacity: 1;
+        visibility: visible;
+        top: 5.5rem;
+    }
+}
+
+.main-header__dropdown-link {
+    font-size: 1.3rem;
+    transition: all .3s ease;
+}
+
+/* Finish DropDown Styles */
+
+.main-header__search-btn {
+    width: 4.3rem;
+    height: 4.3rem;
+    border-radius: 0.5rem;
+    border: none !important;
+
+    @include responsivePage(S) {
+        width: 4rem;
+        height: 3.5rem;
+    }
+
+    .main-header__search-icon {
+        font-size: 2.2rem;
+
+        @include responsivePage(S) {
+            font-size: 1.9rem;
+        }
+    }
+}
+
+.main-header__cart-btn {
+    width: 4.3rem;
+    height: 4.3rem;
+    border-radius: 0.5rem;
+    background-color: #f0f2f7;
+
+    @include responsivePage(S) {
+        width: 4rem;
+        height: 3.5rem;
+    }
+}
+
+.main-header__cart-icon {
+    font-size: 2.2rem;
+    transition: all .3s ease;
+
+    @include responsivePage(S) {
+        font-size: 1.9rem;
+    }
+}
+
+.main-header__profile {
+    border: 2px solid $primary-color;
+    border-radius: 0.5rem;
+    transition: all .3s ease;
+    height: 4.3rem;
+    font-size: 1.5rem;
+
+    &:hover {
+        background-color: $primary-color;
+        color: #fff !important;
+    }
+
+    @include responsivePage(S) {
+        width: max-content !important;
+        height: 3.5rem;
+    }
+}
+
+.main-header__profile-text {
+    max-width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    @include responsivePage(S) {
+        max-width: max-content !important;
+        width: max-content !important;
+        overflow: none !important;
+        text-overflow: none !important;
+        white-space: none !important;
+    }
+}
+
+.btn-toggle-sidebar {
+    background: none !important;
+    border: none !important;
+    outline: none !important;
+    font-size: 3.5rem !important;
+
+    &:focus {
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+    }
+}
+
+.offcanvas {
+    width: 27rem !important;
+
+    @include responsivePage(S) {
+        width: 22rem !important;
+    }
+
+    .btn-close:focus {
+        box-shadow: none !important;
+        border: none !important;
+        outline: none !important;
+    }
+
+    .offcanvas-body-item {
+        transition: .2s;
+        background-color: #f0f2f7;
+
+        &:hover a {
+            background: $primary-color !important;
+            color: #fff !important;
+        }
+    }
+}
+
+
+.landing__searchbar {
+    width: 100%;
+}
+
+.landing__searchbar-input {
+    padding: 2.5rem 2rem 2.5rem 8rem !important;
+    border: none;
+
+    @include responsivePage(M) {
+        font-size: 1.4rem;
+        padding: 2rem 2rem 2rem 7rem !important;
+    }
+
+    @include responsivePage(S) {
+        padding: 2rem 1.2rem 2rem 6rem !important;
+        font-size: 1.2rem;
+    }
+}
+
+.landing__searchbar-btn {
+    border: none;
+    left: 1rem;
+    top: 0.8rem;
+    border-radius: 1rem;
+    padding: 1.2rem !important;
+
+    @include responsivePage(M) {
+        padding: .9rem !important;
+        left: .8rem;
+    }
+
+    @include responsivePage(S) {
+        padding: 1rem !important;
+    }
+
+    .landing__searchbar-icon {
+        font-size: 2.8rem;
+
+        @include responsivePage(M) {
+            font-size: 2.6rem !important;
+        }
+
+        @include responsivePage(S) {
+            font-size: 2.3rem !important;
+        }
+    }
+}
+
