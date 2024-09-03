@@ -3,7 +3,7 @@ import { BiHome } from 'react-icons/bi'
 import { MdKeyboardArrowLeft } from 'react-icons/md'
 import "./BreadCrumb.css"
 
-export default function BreadCrumb({ links }) {
+export default function Breadcrumb({ links }) {
     return (
         <section className="breadcrumb my-4">
             <div className="container">
