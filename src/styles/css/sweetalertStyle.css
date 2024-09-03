@@ -1,0 +1,25 @@
+.swal-icon--error__line--right {
+    margin: -3px -3px 0px 0px !important;
+}
+
+.swal-icon--error__line--left {
+    left: 16px !important;
+    margin: -3px 0px 0px -3px !important;
+}
+
+.swal-icon--success__line--long {
+    right: 6px !important;
+}
+
+.swal-icon--success__line--tip {
+    left: 8px !important;
+}
+
+.swal-text {
+    text-align: center !important;
+    font-weight: 600 !important;
+}
+
+.swal-footer {
+    text-align: center !important;
+}

@@ -1,0 +1,585 @@
+@import "./../../custom";
+
+.course-info {
+    margin-top: 4rem;
+
+
+    .course-info__link {
+        background-color: #2bce5633;
+    }
+
+    .course-info__title {
+        font-size: 2.3rem;
+        color: #3b3b3b;
+        line-height: 3.5rem !important;
+
+        @include responsivePage(S) {
+            font-size: 2rem;
+        }
+    }
+
+    .course-info__text {
+        font-size: 1.5rem;
+        line-height: 2rem;
+
+        @include responsivePage(S) {
+            line-height: 1.8rem;
+        }
+    }
+
+    .course-info__social-media-item {
+        transition: all .3 ease;
+    }
+}
+
+main {
+    margin-top: 5rem;
+}
+
+/* Start Course Progress Styles */
+
+.course-progress {
+    margin: 4rem 0;
+}
+
+.course-progress__bar {
+    border-radius: 10rem;
+    height: 1rem;
+}
+
+/* Finish Course Progress Styles */
+
+/* Start Introduction styles */
+
+.introduction {
+    box-shadow: 0 0 13px 1px rgba(70, 72, 77, 0.08);
+}
+
+.introduction__title {
+    font-size: 1.8rem !important;
+
+    @include responsivePage(M) {
+        font-size: 1.5rem !important;
+    }
+
+    @include responsivePage(XS) {
+        font-size: 1.4rem !important;
+    }
+}
+
+.introduction__text {
+    font-size: 1.3rem;
+
+    @include responsivePage(S) {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+}
+
+.introduction__btns {
+    margin-top: 5rem;
+
+    @include responsivePage(XS) {
+        display: grid;
+    }
+}
+
+.introduction__btns-item {
+    border: 2px solid $primary-color;
+    font-size: 1.3rem;
+    margin: 0 .5rem;
+
+    &:hover {
+        color: #fff !important;
+        background-color: $primary-color;
+    }
+
+    @include responsivePage(S) {
+        font-size: 1.1rem;
+    }
+
+    @include responsivePage(XS) {
+        font-size: 1.3rem;
+        margin: .5rem 0 !important;
+        width: max-content;
+    }
+}
+
+.introduction__topic {
+    margin-top: 4rem;
+}
+
+.accordion {
+    margin-bottom: 1rem;
+}
+
+.accordion-item {
+    background-color: #f7f9fa;
+}
+
+.accordion-header,
+.introduction__accordion-body {
+    border: 1px solid $secondary-500 !important;
+}
+
+.accordion-button {
+    background-color: #eee !important;
+    font-size: 1.3rem !important;
+    padding: 1.4rem 1.5rem 1.4rem 3.5rem !important;
+
+    &:not(.collapsed) {
+        background-color: #f7f9fa;
+    }
+
+    &::after {
+        position: absolute;
+        left: 1.5rem;
+        width: 2rem;
+        height: 2rem;
+        background-position: center;
+    }
+
+    &:focus {
+        box-shadow: none !important;
+        border: none !important;
+        outline: none !important;
+    }
+
+    @include responsivePage(M) {
+        font-size: 1.1rem !important;
+    }
+}
+
+.introduction__accordion-count {
+    background-color: $primary-color;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    padding: 0 10px;
+
+    @include responsivePage(M) {
+        width: 2.8rem;
+        height: 2.8rem;
+        min-width: 2.8rem;
+        min-height: 2.8rem;
+        font-size: 1.1rem !important;
+    }
+}
+
+.introduction__accordion-icon {
+    color: #939aa3;
+    width: 16px !important;
+    height: 16px !important;
+    min-height: 16px !important;
+    min-width: 16px !important;
+
+    @include responsivePage(S) {
+        width: 14px !important;
+        height: 14px !important;
+        min-height: 14px !important;
+        min-width: 14px !important;
+    }
+}
+
+.introduction__accordion-link {
+    font-size: 1.3rem;
+    line-height: 1.7rem !important;
+
+    @include responsivePage(M) {
+        font-size: 1.1rem !important;
+        line-height: 1.5rem !important;
+    }
+}
+
+.introduction__accordion-time {
+    font-size: 1.3rem;
+    color: #7a7a7a;
+}
+
+
+/* Start Teacher Details */
+
+.techer-details {
+    box-shadow: 0 0 13px 1px rgba(70, 72, 77, 0.08);
+
+    .techer-details__header-img {
+        width: 52px;
+        clip-path: circle();
+    }
+
+    .techer-details__header-titles {
+        flex-direction: column;
+    }
+
+    .techer-details__header-link {
+        font-size: 1.4rem !important;
+
+        @include responsivePage(XS) {
+            font-size: 1.3rem !important;
+        }
+    }
+
+    .techer-details__header-skill {
+        font-size: 1.2rem;
+
+        @include responsivePage(XS) {
+            font-size: 1.1rem;
+        }
+    }
+
+    .techer-details__header-icon {
+        font-size: 1.8rem;
+    }
+
+    .techer-details__header-name {
+        font-size: 1.3rem;
+    }
+}
+
+/* Finish Teacher Details */
+
+
+
+/* Start Sidebar Styles */
+
+.courses-info-aside {
+    position: sticky;
+    top: 1rem;
+}
+
+.course-info-aside {
+    box-shadow: 0 0 13px 1px #46484d14;
+    border: 1px solid #f2f2f2;
+
+    .course-price {
+        flex-direction: column;
+
+        .course-price-value {
+            font-size: 2rem;
+        }
+
+        .course-discount {
+            font-size: 1.6rem;
+        }
+    }
+
+    .course-info__courses-title {
+        font-size: 1.8rem;
+    }
+
+    .course-info__courses-list-item {
+        margin-bottom: 2rem;
+    }
+
+    .course-info__courses-img {
+        width: 70px;
+        border-radius: 0.5rem;
+    }
+
+    .course-info__courses-text {
+        font-size: 1.15rem;
+    }
+
+    .course-info__register {
+        color: #fff !important;
+
+        .course-info__register-title {
+            font-size: 1.7rem;
+        }
+    }
+
+    .course-info__register-icon {
+        font-size: 2.7rem;
+    }
+
+    .course-info__top {
+        border: 2px solid #f0f2f7;
+    }
+
+    .course-info__total-sale-icon {
+        color: #555555;
+        font-size: 2.7rem;
+    }
+
+    .course-info__total-sale-text {
+        color: #7f8187;
+
+        @include responsivePage(XS) {
+            font-size: 1.4rem;
+        }
+    }
+
+    .course-info__total-sale-number {
+        background-color: #c4c7cf;
+        font-size: 1.5rem;
+
+        @include responsivePage(XS) {
+            font-size: 1.4rem;
+        }
+    }
+
+    .course-info__total-comment::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 1px;
+        background-color: #e5e5e5;
+        left: -3rem;
+    }
+
+    .course-info__total-comment-icon,
+    .course-info__total-view-icon {
+        font-size: 2.2rem;
+    }
+
+    .course-info__total-comment-text,
+    .course-info__total-view-text {
+        font-size: 1.4rem;
+    }
+
+    .course-info__short-url-icon {
+        font-size: 2rem;
+    }
+
+    .course-info__short-url-text {
+        font-size: 1.7rem;
+    }
+
+    .course-info__short-url {
+        font-size: 1.3rem;
+        overflow: auto;
+        cursor: pointer;
+    }
+}
+
+/* Finish Sidebar Styles */
+
+
+.loader-section {
+    width: 100%;
+    height: 100vh;
+    z-index: 9999999999999999999;
+    position: fixed;
+    background: #0000009f;
+
+    div {
+        z-index: 9999999999999999999;
+    }
+}
+
+.btn-buy-course {
+    width: 48%;
+}
+
+.input-discount {
+    border: 1px solid #ccc;
+}
+
+.valid {
+    border: 1px solid #13af3d !important;
+}
+
+.invalid {
+    border: 1px solid #e90c1f !important;
+}
+
+
+/* Comments section styles */
+
+
+@import "./../../custom";
+
+
+.comments {
+    box-shadow: 0 0 13px 1px rgba(70, 72, 77, 0.08);
+}
+
+.comments__header {
+    margin-bottom: 5rem;
+
+    .comments__header-icon-content {
+        width: 4rem;
+        height: 4rem;
+
+        .comments__header-icon {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+.comments__item,
+.question__item {
+    border: 1px dashed #ccc;
+
+
+    .comments__question-header,
+    .comments__ansewr-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .comments__question-header-right {
+        display: flex;
+        align-items: center;
+
+        @include responsivePage(S) {
+            display: grid !important;
+        }
+    }
+
+    .comments__ansewr-header-right {
+        display: flex;
+        align-items: center;
+    }
+
+    .comment-name {
+        font-size: 1.5rem;
+        max-width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        @include responsivePage(M) {
+            font-size: 1.3rem;
+        }
+
+        @include responsivePage(S) {
+            font-size: 1.4rem;
+            max-width: 140px;
+        }
+    }
+
+    .comment-status {
+        font-size: .9rem;
+
+        @include responsivePage(S) {
+            width: max-content;
+        }
+    }
+
+    .comment-date {
+        font-size: 1.4rem;
+
+        @include responsivePage(M) {
+            font-size: 1.25rem;
+        }
+    }
+
+    .comment-link {
+        font-size: 1.2rem;
+    }
+
+    .anwser-link {
+        font-size: 1.3rem;
+
+        &:hover {
+            color: #fff !important;
+        }
+
+        @include responsivePage(XS) {
+            font-size: 1.1rem;
+        }
+    }
+
+    .comment-paragraph {
+        font-size: 1.3rem;
+        font-family: IRANSans;
+        overflow: visible;
+
+        @include responsivePage(S) {
+            font-size: 1.2rem;
+        }
+    }
+
+    .comments__ansewr {
+        border: 1px dashed #ccc;
+        border-radius: 1rem;
+        padding: 3rem;
+    }
+
+    .comments__ansewr-staus {
+        background-color: #2196f3;
+    }
+}
+
+.comments__rules {
+    flex-direction: column;
+    margin-top: 6rem;
+
+    .comments__rules-title {
+        font-size: 1.4rem;
+    }
+
+    .comments__rules-item {
+        font-size: 1.2rem;
+
+        @include responsivePage(S) {
+            font-size: 1.07rem;
+        }
+    }
+}
+
+.comments__score-title {
+    font-size: 1.5rem;
+}
+
+.comments__score-input {
+    border: 1px solid #e5e5e5;
+    cursor: pointer;
+    transition: all .3s ease;
+    font-size: 1.4rem;
+
+    &:hover {
+        background-color: #1e83f0 !important;
+        color: #fff !important;
+    }
+}
+
+.comments__respond-title {
+    font-size: 1.5rem;
+}
+
+.comments__score-input-respond {
+    border: 1px solid #e5e5e5;
+    font-size: 1.3rem !important;
+
+    &:focus {
+        box-shadow: none !important;
+    }
+}
+
+.comments__respond-btn {
+    font-size: 1.5rem !important;
+    border: none !important;
+}
+
+.not-login-message {
+    margin-top: 8rem !important;
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    .login-items {
+        @include responsivePage(XS) {
+            flex-direction: column;
+        }
+    }
+
+    span {
+        @include responsivePage(S) {
+            font-size: 1.3rem;
+        }
+
+        @include responsivePage(XS) {
+            margin-top: 1rem;
+        }
+    }
+}
+
+.courses__pagination-link {
+    width: 35px !important;
+    height: 35px !important;
+}

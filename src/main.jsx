@@ -5,6 +5,7 @@ import { BrowserRouter } from 'react-router-dom'
 import "./custom.css"
 import "./styles/css/helpers.css"
 import "bootstrap/dist/css/bootstrap.rtl.min.css"
+import "./styles/css/sweetalertStyle.css"
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
