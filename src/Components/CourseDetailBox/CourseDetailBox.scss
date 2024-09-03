@@ -1,0 +1,26 @@
+@import "./../../custom";
+
+
+.course-boxes__box {
+    box-shadow: 0 5px 30px #46484d14;
+
+
+    .course-boxes__box-right {
+        svg {
+            font-size: 3rem;
+            color: $primary-color;
+        }
+    }
+
+    .course-boxes__box-left {
+        flex-direction: column;
+
+        .course-boxes__box-left-title {
+            font-size: 1.3rem;
+        }
+
+        .course-boxes__box-left--subtitle {
+            font-size: 1.2rem;
+        }
+    }
+}
