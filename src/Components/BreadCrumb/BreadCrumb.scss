@@ -1,0 +1,44 @@
+@import "./../../custom";
+
+
+.breadcrumb__content {
+    @include responsivePage(M) {
+        flex-direction: column !important;
+        gap: 2rem;
+    }
+
+    .breadcrumb__home-icon {
+        font-size: 2rem;
+
+        @include responsivePage(S) {
+            font-size: 1.5rem !important;
+        }
+    }
+
+    .breadcrumb__list {
+        @include responsivePage(M) {
+            .breadcrumb__item:nth-child(2) {
+                margin-top: 2rem !important;
+                margin-bottom: 2rem !important;
+            }
+        }
+
+        .breadcrumb__item {
+            list-style: none;
+            line-height: 1.7rem !important;
+
+            @include responsivePage(M) {
+                line-height: 1.4rem !important;
+            }
+
+            .breadcrumb__link {
+                font-size: 1.3rem !important;
+
+                @include responsivePage(L) {
+                    font-size: 1.2rem !important;
+                }
+            }
+        }
+
+    }
+}
