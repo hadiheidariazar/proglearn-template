@@ -1,0 +1,39 @@
+@import "./../../custom";
+
+.presell {
+    margin-top: 6rem;
+}
+
+
+.swiper-pagination-bullet-active {
+    background: $primary-color !important;
+    border: 2px solid $primary-color !important;
+
+    @include responsivePage(S) {
+        width: 30px !important;
+    }
+}
+
+.swiper-pagination-bullet {
+    border: 2px solid $primary-color !important;
+}
+
+.swiper-button-prev {
+    margin: -15px 15px 0px 0px;
+    transform: scale(.9);
+    color: #fff !important;
+
+    @include responsivePage(L) {
+        display: none !important;
+    }
+}
+
+.swiper-button-next {
+    margin: -15px 0px 0px 15px;
+    transform: scale(.9);
+    color: #fff !important;
+
+    @include responsivePage(L) {
+        display: none !important;
+    }
+}

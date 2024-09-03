@@ -1,6 +1,6 @@
 import React from 'react'
+import "./PresellCourses.css"
 import SectionHeader from '../SectionHeader/SectionHeader'
-import "./PerformingCourses.css"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -8,13 +8,14 @@ import 'swiper/css/navigation';
 import CourseBox from '../CourseBox/CourseBox';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
-export default function PerformingCourses() {
+export default function PresellCourses() {
+
     return (
-        <div className="performing">
+        <div className="presell">
             <div className='container'>
                 <SectionHeader
-                    title="دوره های در حال برگزاری"
-                    desc="دوره هایی که در حال برگزاری هستند"
+                    title="دوره های پیش فروش"
+                    desc="دوره هایی که در حال حاضر پیش فروش هستند"
                 />
                 <div className="courses-content mx-2">
                     <div className="row">
@@ -39,7 +40,7 @@ export default function PerformingCourses() {
                             className="mySwiper pb-5"
                         >
                             <SwiperSlide>
-                                <CourseBox
+                            <CourseBox
                                     title='آموزش مقدماتی تا پیشرفته Tailwindcss (تیلویند) + دیزاین اختصاصی'
                                     teacherName="هادی حیدری آذر"
                                     price={750000}
@@ -61,7 +62,18 @@ export default function PerformingCourses() {
                                 />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <CourseBox
+                            <CourseBox
+                                    title='آموزش مقدماتی تا پیشرفته Tailwindcss (تیلویند) + دیزاین اختصاصی'
+                                    teacherName="هادی حیدری آذر"
+                                    price={750000}
+                                    isSlider={true}
+                                    cover='/images/courses/tailwindcss.jpg'
+                                    off={0}
+                                    url='tailwindcss'
+                                />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                            <CourseBox
                                     title='آموزش مقدماتی تا پیشرفته Tailwindcss (تیلویند) + دیزاین اختصاصی'
                                     teacherName="هادی حیدری آذر"
                                     price={750000}
@@ -83,18 +95,7 @@ export default function PerformingCourses() {
                                 />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <CourseBox
-                                    title='آموزش مقدماتی تا پیشرفته Tailwindcss (تیلویند) + دیزاین اختصاصی'
-                                    teacherName="هادی حیدری آذر"
-                                    price={750000}
-                                    isSlider={true}
-                                    cover='/images/courses/tailwindcss.jpg'
-                                    off={0}
-                                    url='tailwindcss'
-                                />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <CourseBox
+                            <CourseBox
                                     title='آموزش مقدماتی تا پیشرفته Tailwindcss (تیلویند) + دیزاین اختصاصی'
                                     teacherName="هادی حیدری آذر"
                                     price={750000}
@@ -107,7 +108,8 @@ export default function PerformingCourses() {
                         </Swiper>
                     </div>
                 </div>
+
             </div>
-        </div>
+        </div >
     )
 }

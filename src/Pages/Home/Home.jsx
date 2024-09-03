@@ -4,6 +4,7 @@ import Header from '../../Components/Header/Header'
 import LastCourses from '../../Components/LastCourses/LastCourses'
 import AboutUs from '../../Components/AboutUs/AboutUs'
 import PerformingCourses from '../../Components/PerformingCourses/PerformingCourses'
+import PresellCourses from '../../Components/PresellCourses/PresellCourses'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <LastCourses />
         <AboutUs />
         <PerformingCourses />
+        <PresellCourses />
     </>
   )
 }
