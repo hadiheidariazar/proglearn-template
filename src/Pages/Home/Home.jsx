@@ -1,7 +1,11 @@
 import React from 'react'
+import TitlePage from '../../Components/TitlePage/TitlePage'
 
 export default function Home() {
   return (
-    <div>Home</div>
+    <>
+        <TitlePage titlePage="پروگ لرن - آکادمی آموزش برنامه نویسی" />
+        Home
+    </>
   )
 }
