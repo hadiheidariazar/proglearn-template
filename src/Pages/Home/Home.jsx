@@ -1,6 +1,7 @@
 import React from 'react'
 import TitlePage from '../../Components/TitlePage/TitlePage'
 import Header from '../../Components/Header/Header'
+import LastCourses from '../../Components/LastCourses/LastCourses'
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
         <TitlePage titlePage="پروگ لرن - آکادمی آموزش برنامه نویسی" />
         
         <Header />
+        <LastCourses />
     </>
   )
 }

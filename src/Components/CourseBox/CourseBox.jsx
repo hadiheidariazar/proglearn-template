@@ -51,7 +51,7 @@ export default function CourseBox({ title, teacherName, price, cover, off, url, 
                         <div className="col-12 col-md-6 mt-2 mt-md-0 price-container text-end align-items-center">
                             <p className={`course-box__price text-secondary fw-bold ${price === 0 ? "text-success" : ""}`}>
                                 {
-                                    price === 0 ? "رایگان" : (
+                                    (price === 0 || off === 100) ? "رایگان" : (
                                         <>
                                             {[price - (price * off) / 100].toLocaleString('fa-IR')}
                                             <span className='fs-6 ms-1'> تومان </span>

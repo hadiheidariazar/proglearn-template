@@ -1,0 +1,11 @@
+.courses-header__right {
+    flex-direction: column;
+
+    .courses-header__text {
+        color: #9c9c9c;
+    }
+}
+
+.courses-header__link:hover {
+    color: #fff !important;
+}
