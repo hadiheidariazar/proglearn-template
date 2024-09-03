@@ -6,6 +6,7 @@ import AboutUs from '../../Components/AboutUs/AboutUs'
 import PerformingCourses from '../../Components/PerformingCourses/PerformingCourses'
 import PresellCourses from '../../Components/PresellCourses/PresellCourses'
 import LastArticles from '../../Components/LastArticles/LastArticles'
+import Footer from '../../Components/Footer/Footer'
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <PerformingCourses />
         <PresellCourses />
         <LastArticles />
+        <Footer />
     </>
   )
 }

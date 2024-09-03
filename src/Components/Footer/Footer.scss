@@ -1,0 +1,108 @@
+@import "./../../custom";
+
+footer {
+    margin-top: 8rem !important;
+}
+
+.footer-widgets {
+    background-color: #ebeef5;
+    margin-bottom: 6rem;
+
+    &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        height: 4rem;
+        width: 45rem;
+        background-color: $primary-color;
+        z-index: -1;
+        bottom: -1.5rem;
+        border-radius: 5rem;
+
+        @include responsivePage(L) {
+            width: 30rem;
+        }
+
+        @include responsivePage(S) {
+            width: 25rem;
+        }
+
+        @include responsivePage(XS) {
+            width: 17rem;
+        }
+    }
+
+
+    .footer-widgets__title {
+        margin-bottom: 4rem;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 3.5rem;
+            height: 3.5rem;
+            background-color: $primary-color;
+            border-radius: 0.7rem;
+            right: 1rem;
+            opacity: 0.3;
+            transform: rotate(45deg);
+        }
+    }
+
+    .footer-widgets__text {
+        line-height: 2.2rem !important;
+        
+        @include responsivePage(XS) {
+            line-height: 2rem !important;
+            font-size: 1.3rem !important;
+        }
+    }
+
+    .footer-widgets__links {
+        flex-direction: column;
+
+        @include responsivePage(XS) {
+            font-size: 1.4rem !important;
+            line-height: 1.8rem !important;
+        }
+    }
+
+    .footer-widgets__link {
+        display: block;
+        margin-bottom: 1rem;
+        line-height: 2rem !important;
+        
+        @include responsivePage(XS) {
+            font-size: 1.3rem !important;
+            line-height: 1.8rem !important;
+        }
+    }
+
+}
+
+.footer__copyright {
+    background-color: #ebeef5;
+
+    .footer__copyright-text {
+        line-height: 2.2rem !important;
+
+        @include responsivePage(M) {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+
+.email-input-register-newsletters {
+    font-size: 1.3rem;
+    border-radius: 0px 4px 4px 0px !important;
+}
+
+.btn-register-newsletters {
+    border-radius: 4px 0px 0px 4px !important;
+    font-size: 1.3rem !important;
+    margin-left: 2px;
+}

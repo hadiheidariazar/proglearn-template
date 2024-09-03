@@ -1,0 +1,235 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: IRANSans;
+  src: url("./fonts/IRANSans.ttf");
+}
+html {
+  box-sizing: border-box !important;
+  font-size: 62.5% !important;
+}
+
+body {
+  line-height: 1.8rem !important;
+  font-size: 1.6rem !important;
+  font-family: IRANSans !important;
+  word-spacing: -2px !important;
+  background-color: #f7f7f7 !important;
+  direction: rtl !important;
+}
+
+*,
+*::after,
+*::before {
+  outline: none !important;
+  box-sizing: inherit !important;
+}
+
+a {
+  text-decoration: none !important;
+  color: #1b1b1b !important;
+  transition: all 0.3s ease !important;
+}
+
+a:hover {
+  color: #13af3d !important;
+}
+
+i {
+  -webkit-user-select: none !important;
+     -moz-user-select: none !important;
+          user-select: none !important;
+}
+
+.bg-main-color {
+  background-color: #13af3d !important;
+}
+
+.text-main-color {
+  color: #13af3d !important;
+}
+
+.bg-dark-color {
+  background-color: #1b1b1b !important;
+}
+
+.text-dark-color {
+  color: #1b1b1b !important;
+}
+
+.bg-secondary-500 {
+  background-color: #ebeef5 !important;
+}
+
+.text-secondary-500 {
+  color: #ebeef5 !important;
+}
+
+.fs-7 {
+  font-size: 0.85rem !important;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.circle {
+  -webkit-clip-path: circle();
+          clip-path: circle();
+}
+
+footer {
+  margin-top: 8rem !important;
+}
+
+.footer-widgets {
+  background-color: #ebeef5;
+  margin-bottom: 6rem;
+}
+.footer-widgets::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  height: 4rem;
+  width: 45rem;
+  background-color: #13af3d;
+  z-index: -1;
+  bottom: -1.5rem;
+  border-radius: 5rem;
+}
+@media screen and (max-width: 991px) {
+  .footer-widgets::before {
+    width: 30rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .footer-widgets::before {
+    width: 25rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .footer-widgets::before {
+    width: 17rem;
+  }
+}
+.footer-widgets .footer-widgets__title {
+  margin-bottom: 4rem;
+  position: relative;
+}
+.footer-widgets .footer-widgets__title::before {
+  content: "";
+  position: absolute;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #13af3d;
+  border-radius: 0.7rem;
+  right: 1rem;
+  opacity: 0.3;
+  transform: rotate(45deg);
+}
+.footer-widgets .footer-widgets__text {
+  line-height: 2.2rem !important;
+}
+@media screen and (max-width: 400px) {
+  .footer-widgets .footer-widgets__text {
+    line-height: 2rem !important;
+    font-size: 1.3rem !important;
+  }
+}
+.footer-widgets .footer-widgets__links {
+  flex-direction: column;
+}
+@media screen and (max-width: 400px) {
+  .footer-widgets .footer-widgets__links {
+    font-size: 1.4rem !important;
+    line-height: 1.8rem !important;
+  }
+}
+.footer-widgets .footer-widgets__link {
+  display: block;
+  margin-bottom: 1rem;
+  line-height: 2rem !important;
+}
+@media screen and (max-width: 400px) {
+  .footer-widgets .footer-widgets__link {
+    font-size: 1.3rem !important;
+    line-height: 1.8rem !important;
+  }
+}
+
+.footer__copyright {
+  background-color: #ebeef5;
+}
+.footer__copyright .footer__copyright-text {
+  line-height: 2.2rem !important;
+}
+@media screen and (max-width: 767px) {
+  .footer__copyright .footer__copyright-text {
+    font-size: 1.5rem;
+  }
+}
+
+.email-input-register-newsletters {
+  font-size: 1.3rem;
+  border-radius: 0px 4px 4px 0px !important;
+}
+
+.btn-register-newsletters {
+  border-radius: 4px 0px 0px 4px !important;
+  font-size: 1.3rem !important;
+  margin-left: 2px;
+}/*# sourceMappingURL=Footer.css.map */
