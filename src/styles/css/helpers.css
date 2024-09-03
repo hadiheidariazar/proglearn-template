@@ -1,0 +1,208 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: IRANSans;
+  src: url("./fonts/IRANSans.ttf");
+}
+html {
+  box-sizing: border-box !important;
+  font-size: 62.5% !important;
+}
+
+body {
+  line-height: 1.8rem !important;
+  font-size: 1.6rem !important;
+  font-family: IRANSans !important;
+  word-spacing: -2px !important;
+  background-color: #f7f7f7 !important;
+  direction: rtl !important;
+}
+
+*,
+*::after,
+*::before {
+  outline: none !important;
+  box-sizing: inherit !important;
+}
+
+a {
+  text-decoration: none !important;
+  color: #1b1b1b !important;
+  transition: all 0.3s ease !important;
+}
+
+a:hover {
+  color: #13af3d !important;
+}
+
+i {
+  -webkit-user-select: none !important;
+     -moz-user-select: none !important;
+          user-select: none !important;
+}
+
+.bg-main-color {
+  background-color: #13af3d !important;
+}
+
+.text-main-color {
+  color: #13af3d !important;
+}
+
+.bg-dark-color {
+  background-color: #1b1b1b !important;
+}
+
+.text-dark-color {
+  color: #1b1b1b !important;
+}
+
+.bg-secondary-500 {
+  background-color: #ebeef5 !important;
+}
+
+.text-secondary-500 {
+  color: #ebeef5 !important;
+}
+
+.fs-7 {
+  font-size: 0.85rem !important;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.circle {
+  -webkit-clip-path: circle();
+          clip-path: circle();
+}
+
+/* Start Helper Classes */
+.title {
+  font-size: 2.3rem;
+  color: #444446;
+  font-weight: bold;
+  line-height: 1.2;
+  position: relative;
+}
+
+.title::before {
+  content: "";
+  position: absolute;
+  right: -1rem;
+  width: 0.4rem;
+  height: 4.4rem;
+  background-color: #13af3d;
+  border-radius: 5rem;
+  transform: rotate(8deg);
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  /* max-width: 250px; */
+  height: 60%;
+  background-color: rgba(43, 206, 86, 0.2);
+}
+
+/* Finish Helper Classes */
+/* Snipper Styles */
+.loader-page {
+  height: 100vh;
+  z-index: 99999999999;
+  position: fixed;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.overflow-hidden {
+  overflow: hidden !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.custom-loader {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(#13af3d 0 0), radial-gradient(farthest-side, #13af3d 92%, rgba(0, 0, 0, 0)), linear-gradient(#13af3d 0 0), radial-gradient(farthest-side, #13af3d 92%, rgba(0, 0, 0, 0)), linear-gradient(#13af3d 0 0), radial-gradient(farthest-side, #13af3d 92%, rgba(0, 0, 0, 0));
+  background-size: 15px 15px, 15px 15px;
+  background-repeat: no-repeat;
+  animation: db4 1s infinite alternate;
+}
+
+@keyframes db4 {
+  0%, 10% {
+    background-position: 0 0, 0 100%, 50% 0, 50% 100%, 100% 0, 100% 100%;
+  }
+  33% {
+    background-position: 0 100%, 0 0, 50% 0, 50% 100%, 100% 0, 100% 100%;
+  }
+  66% {
+    background-position: 0 100%, 0 0, 50% 100%, 50% 0, 100% 0, 100% 100%;
+  }
+  90%, 100% {
+    background-position: 0 100%, 0 0, 50% 100%, 50% 0, 100% 100%, 100% 0;
+  }
+}
+/* Snipper Styles *//*# sourceMappingURL=helpers.css.map */

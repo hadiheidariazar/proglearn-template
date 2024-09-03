@@ -1,0 +1,97 @@
+@import "./../../custom";
+
+/* Start Helper Classes */
+
+.title {
+    font-size: 2.3rem;
+    color: #444446;
+    font-weight: bold;
+    line-height: 1.2;
+    position: relative;
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    right: -1rem;
+    width: 0.4rem;
+    height: 4.4rem;
+    background-color: $primary-color;
+    border-radius: 5rem;
+    transform: rotate(8deg);
+}
+
+.title::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    /* max-width: 250px; */
+    height: 60%;
+    background-color: rgba(43, 206, 86, 0.2);
+}
+
+/* Finish Helper Classes */
+
+
+/* Snipper Styles */
+
+.loader-page {
+    height: 100vh;
+    z-index: 99999999999;
+    position: fixed;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.overflow-hidden {
+    overflow: hidden !important;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.custom-loader {
+    width: 60px;
+    height: 60px;
+    $c: linear-gradient($primary-color 0 0);
+    $m: radial-gradient(farthest-side, $primary-color 92%, #0000);
+    background:
+        $c,
+        $m,
+        $c,
+        $m,
+        $c,
+        $m;
+    background-size: 15px 15px, 15px 15px;
+    background-repeat: no-repeat;
+    animation: db4 1s infinite alternate;
+}
+
+@keyframes db4 {
+
+    0%,
+    10% {
+        background-position: 0 0, 0 100%, 50% 0, 50% 100%, 100% 0, 100% 100%
+    }
+
+    33% {
+        background-position: 0 100%, 0 0, 50% 0, 50% 100%, 100% 0, 100% 100%
+    }
+
+    66% {
+        background-position: 0 100%, 0 0, 50% 100%, 50% 0, 100% 0, 100% 100%
+    }
+
+    90%,
+    100% {
+        background-position: 0 100%, 0 0, 50% 100%, 50% 0, 100% 100%, 100% 0
+    }
+}
+
+/* Snipper Styles */

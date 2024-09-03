@@ -1,0 +1,31 @@
+@mixin responsivePage($size) {
+    @if ($size ==XL) {
+        @media screen and (max-width: 1199px) {
+            @content;
+        }
+    }
+
+    @else if ($size ==L) {
+        @media screen and (max-width: 991px) {
+            @content;
+        }
+    }
+
+    @else if ($size ==M) {
+        @media screen and (max-width: 767px) {
+            @content;
+        }
+    }
+
+    @else if ($size ==S) {
+        @media screen and (max-width: 576px) {
+            @content;
+        }
+    }
+
+    @else if ($size ==XS) {
+        @media screen and (max-width: 400px) {
+            @content
+        }
+    }
+};

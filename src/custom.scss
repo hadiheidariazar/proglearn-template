@@ -1,0 +1,83 @@
+@import "variables";
+@import "mixins";
+@import "reset";
+
+@font-face {
+    font-family: IRANSans;
+    src: url('./fonts/IRANSans.ttf');
+}
+
+html {
+    box-sizing: border-box !important;
+    font-size: 62.5% !important;
+}
+
+body {
+    line-height: 1.8rem !important;
+    font-size: 1.6rem !important;
+    font-family: $primary-font !important;
+    word-spacing: -2px !important;
+    background-color: #f7f7f7 !important;
+    direction: rtl !important;
+}
+
+*,
+*::after,
+*::before {
+    outline: none !important;
+    box-sizing: inherit !important;
+}
+
+a {
+    text-decoration: none !important;
+    color: $dark-color !important;
+    transition: all .3s ease !important;
+}
+
+a:hover {
+    color: $primary-color !important;
+}
+
+i {
+    user-select: none !important;
+}
+
+.bg-main-color {
+    background-color: $primary-color !important;
+}
+
+.text-main-color {
+    color: $primary-color !important;
+}
+
+.bg-dark-color {
+    background-color: $dark-color !important;
+}
+
+.text-dark-color {
+    color: $dark-color !important;
+}
+
+.bg-secondary-500 {
+    background-color: $secondary-500 !important;
+}
+
+.text-secondary-500 {
+    color: $secondary-500 !important;
+}
+
+.fs-7 {
+    font-size: .85rem !important;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+.circle {
+    clip-path: circle();
+}
