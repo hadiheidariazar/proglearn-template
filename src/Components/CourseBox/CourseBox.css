@@ -1,0 +1,214 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: IRANSans;
+  src: url("./fonts/IRANSans.ttf");
+}
+html {
+  box-sizing: border-box !important;
+  font-size: 62.5% !important;
+}
+
+body {
+  line-height: 1.8rem !important;
+  font-size: 1.6rem !important;
+  font-family: IRANSans !important;
+  word-spacing: -2px !important;
+  background-color: #f7f7f7 !important;
+  direction: rtl !important;
+}
+
+*,
+*::after,
+*::before {
+  outline: none !important;
+  box-sizing: inherit !important;
+}
+
+a {
+  text-decoration: none !important;
+  color: #1b1b1b !important;
+  transition: all 0.3s ease !important;
+}
+
+a:hover {
+  color: #13af3d !important;
+}
+
+i {
+  -webkit-user-select: none !important;
+     -moz-user-select: none !important;
+          user-select: none !important;
+}
+
+.bg-main-color {
+  background-color: #13af3d !important;
+}
+
+.text-main-color {
+  color: #13af3d !important;
+}
+
+.bg-dark-color {
+  background-color: #1b1b1b !important;
+}
+
+.text-dark-color {
+  color: #1b1b1b !important;
+}
+
+.bg-secondary-500 {
+  background-color: #ebeef5 !important;
+}
+
+.text-secondary-500 {
+  color: #ebeef5 !important;
+}
+
+.fs-7 {
+  font-size: 0.85rem !important;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.circle {
+  -webkit-clip-path: circle();
+          clip-path: circle();
+}
+
+.course-box {
+  box-shadow: 0 0 19px rgba(168, 172, 185, 0.3019607843);
+  transition: all 0.3s ease;
+}
+.course-box:hover {
+  transform: translateY(-1.8rem);
+}
+.course-box .course-box__img {
+  border-radius: 1rem 1rem 0 0;
+  aspect-ratio: 16/10;
+}
+.course-box .course-box-title-section {
+  height: 5.5rem;
+  overflow: hidden;
+}
+.course-box .course-box-title-section .course-box__title {
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 767px) {
+  .course-box .course-box-title-section .course-box__title {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .course-box .course-box-title-section .course-box__title {
+    font-size: 1.1rem;
+  }
+}
+.course-box .course-box__teacher-icon {
+  font-size: 1.8rem;
+}
+@media screen and (max-width: 767px) {
+  .course-box .course-box__teacher-icon {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .course-box .course-box__teacher-icon {
+    font-size: 1.4rem;
+  }
+}
+.course-box .course-box__teacher-link {
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 991px) {
+  .course-box .course-box__teacher-link {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .course-box .course-box__teacher-link {
+    font-size: 1rem;
+  }
+}
+.course-box .course-price {
+  height: 3rem;
+}
+@media screen and (max-width: 767px) {
+  .course-box .course-price {
+    height: 3.5rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .course-box .course-price .discount-container {
+    text-align: center !important;
+  }
+}
+.course-box .course-price .discount-container .course-box__discount {
+  font-size: 1.2rem;
+  margin: 0;
+}
+@media screen and (max-width: 767px) {
+  .course-box .course-price .price-container {
+    text-align: center !important;
+  }
+}
+.course-box .course-price .price-container .course-box__price {
+  font-size: 1.4rem;
+  line-height: 0.8rem !important;
+  margin: 0;
+}/*# sourceMappingURL=CourseBox.css.map */

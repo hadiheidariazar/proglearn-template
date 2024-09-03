@@ -1,0 +1,91 @@
+@import "./../../custom";
+
+
+.course-box {
+    box-shadow: 0 0 19px #a8acb94d;
+    transition: all .3s ease;
+
+
+    &:hover {
+        transform: translateY(-1.8rem);
+    }
+
+    .course-box__img {
+        border-radius: 1rem 1rem 0 0;
+        aspect-ratio: 16/10;
+    }
+
+
+    .course-box-title-section {
+        height: 5.5rem;
+        overflow: hidden;
+
+        .course-box__title {
+            font-size: 1.5rem;
+
+            @include responsivePage(M) {
+                font-size: 1.2rem;
+                line-height: 1.4rem;
+            }
+
+            @include responsivePage(XS) {
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+    .course-box__teacher-icon {
+        font-size: 1.8rem;
+
+        @include responsivePage(M) {
+            font-size: 1.6rem;
+        }
+
+        @include responsivePage(XS) {
+            font-size: 1.4rem;
+        }
+    }
+
+    .course-box__teacher-link {
+        font-size: 1.2rem;
+
+        @include responsivePage(L) {
+            font-size: 1.1rem;
+        }
+
+        @include responsivePage(M) {
+            font-size: 1rem;
+        }
+    }
+
+    .course-price {
+        height: 3rem;
+
+        @include responsivePage(M) {
+            height: 3.5rem;
+        }
+
+        .discount-container {
+            @include responsivePage(M) {
+                text-align: center !important;
+            }
+
+            .course-box__discount {
+                font-size: 1.2rem;
+                margin: 0;
+            }
+        }
+
+        .price-container {
+            @include responsivePage(M) {
+                text-align: center !important;
+            }
+
+            .course-box__price {
+                font-size: 1.4rem;
+                line-height: 0.8rem !important;
+                margin: 0;
+            }
+        }
+    }
+}
