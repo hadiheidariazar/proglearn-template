@@ -1,3 +1,197 @@
-.last-articles {
-  margin-top: 6rem;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: IRANSans;
+  src: url("./fonts/IRANSans.ttf");
+}
+html {
+  box-sizing: border-box !important;
+  font-size: 62.5% !important;
+}
+
+body {
+  line-height: 1.8rem !important;
+  font-size: 1.6rem !important;
+  font-family: IRANSans !important;
+  word-spacing: -2px !important;
+  background-color: #f7f7f7 !important;
+  direction: rtl !important;
+}
+
+*,
+*::after,
+*::before {
+  outline: none !important;
+  box-sizing: inherit !important;
+}
+
+a {
+  text-decoration: none !important;
+  color: #1b1b1b !important;
+  transition: all 0.3s ease !important;
+}
+
+a:hover {
+  color: #13af3d !important;
+}
+
+i {
+  -webkit-user-select: none !important;
+     -moz-user-select: none !important;
+          user-select: none !important;
+}
+
+.bg-main-color {
+  background-color: #13af3d !important;
+}
+
+.text-main-color {
+  color: #13af3d !important;
+}
+
+.bg-dark-color {
+  background-color: #1b1b1b !important;
+}
+
+.text-dark-color {
+  color: #1b1b1b !important;
+}
+
+.bg-secondary-500 {
+  background-color: #ebeef5 !important;
+}
+
+.text-secondary-500 {
+  color: #ebeef5 !important;
+}
+
+.fs-7 {
+  font-size: 0.85rem !important;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.circle {
+  -webkit-clip-path: circle();
+          clip-path: circle();
+}
+
+.article-card {
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 30px rgba(70, 72, 77, 0.0784313725);
+  overflow: hidden;
+}
+.article-card:hover {
+  transform: translateY(-1.8rem);
+}
+.article-card .article-title {
+  height: 5.6rem;
+  overflow: hidden;
+}
+.article-card .article-title .article-card__link {
+  line-height: 2rem !important;
+}
+@media screen and (max-width: 991px) {
+  .article-card .article-title .article-card__link {
+    line-height: 1.7rem !important;
+    font-size: 1.4rem !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .article-card .article-title .article-card__link {
+    font-size: 1.2rem !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .article-card .article-title .article-card__link {
+    line-height: 1rem !important;
+    font-size: 1.1rem !important;
+  }
+}
+.article-card .article-card__img {
+  border-radius: 1rem 1rem 0 0;
+  aspect-ratio: 16/10;
+}
+.article-card .article-card__content {
+  padding: 1rem 2rem 3rem 2rem;
+}
+.article-card .article-desc {
+  height: 5.8rem;
+  overflow: hidden;
+}
+.article-card .article-desc .article-card__text {
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 991px) {
+  .article-card .article-desc .article-card__text {
+    font-size: 1.1rem !important;
+    line-height: 1.3rem !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .article-card .article-desc .article-card__text {
+    font-size: 1rem !important;
+  }
+}
+.article-card .article-card__btn {
+  border: 2px solid #13af3d;
+  transition: all 0.3s ease;
+}
+.article-card .article-card__btn:hover {
+  color: #fff !important;
+  background-color: #13af3d;
 }/*# sourceMappingURL=ArticleBox.css.map */

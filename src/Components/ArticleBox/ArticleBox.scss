@@ -1,3 +1,71 @@
-.last-articles {
-    margin-top: 6rem;
+@import "./../../custom";
+
+.article-card {
+    transition: all .3s ease;
+    box-shadow: 0 5px 30px #46484d14;
+    overflow: hidden;
+
+    &:hover {
+        transform: translateY(-1.8rem);
+    }
+
+    .article-title {
+        height: 5.6rem;
+        overflow: hidden;
+
+        .article-card__link {
+            line-height: 2rem !important;
+
+            @include responsivePage(L) {
+                line-height: 1.7rem !important;
+                font-size: 1.4rem !important;
+            }
+
+            @include responsivePage(M) {
+                font-size: 1.2rem !important;
+            }
+
+            @include responsivePage(XS) {
+                line-height: 1rem !important;
+                font-size: 1.1rem !important;
+            }
+        }
+    }
+
+    .article-card__img {
+        border-radius: 1rem 1rem 0 0;
+        aspect-ratio: 16/10;
+    }
+
+    .article-card__content {
+        padding: 1rem 2rem 3rem 2rem;
+    }
+
+    .article-desc {
+        height: 5.8rem;
+        overflow: hidden;
+
+        .article-card__text {
+            font-size: 1.2rem;
+
+            @include responsivePage(L) {
+                font-size: 1.1rem !important;
+                line-height: 1.3rem !important;
+            }
+
+            @include responsivePage(S) {
+                font-size: 1rem !important;
+            }
+        }
+    }
+
+    .article-card__btn {
+        border: 2px solid $primary-color;
+        transition: all .3s ease;
+
+        &:hover {
+            color: #fff !important;
+            background-color: $primary-color;
+        }
+    }
 }
