@@ -1,0 +1,13 @@
+.about-us__box {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1019607843);
+}
+.about-us__box .about-us__box-right svg {
+  color: #666;
+  font-size: 5.5rem;
+}
+.about-us__box .about-us__box-left {
+  flex-direction: column;
+}
+.about-us__box .about-us__box-left .about-us__box-text {
+  font-size: 1.4rem;
+}/*# sourceMappingURL=AboutUsBox.css.map */
