@@ -1,0 +1,131 @@
+@import "./../../custom";
+
+input {
+    direction: rtl !important;
+}
+
+.login-register {
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -5rem;
+        width: 150%;
+        height: 380px;
+        background-color: #2bce56;
+        z-index: -1;
+        transform: rotate(-4deg);
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 150%;
+        height: 380px;
+        background-color: rgb(43, 206, 86, 0.6);
+        z-index: -9999;
+        transform: rotate(-4deg);
+    }
+
+    .login {
+        flex-direction: column;
+        margin: 4rem 0;
+        box-shadow: 0 6px 20px #a8acb94d;
+        width: 50rem;
+        border-bottom: 5px solid #2bce56;
+    }
+
+    .login__title {
+        font-size: 2.2rem;
+    }
+
+    .login__subtitle {
+        font-size: 1.5rem;
+    }
+
+    .login__new-member-text {
+        font-size: 1.4rem;
+    }
+
+    .login__new-member-link {
+        font-size: 1.2rem;
+
+        &:hover {
+            color: #fff !important;
+        }
+    }
+
+    .login-form__username-input,
+    .login-form__password-input {
+        font-size: 1.4rem;
+        padding: 1.2rem 3.5rem 1.2rem 1.2rem;
+
+        &:focus {
+            box-shadow: none !important;
+        }
+
+        @include responsivePage(S) {
+            font-size: 1.2rem;
+        }
+    }
+
+    .login-form__password-input {
+        padding-left: 3.8rem;
+    }
+
+    .login-form__username-icon,
+    .login-form__password-icon {
+        right: .8rem;
+        top: 1.5rem;
+        font-size: 2.2rem;
+    }
+
+    .toggle-type-password-icon {
+        left: 1rem;
+        top: 1.4rem;
+        z-index: 3;
+        cursor: pointer;
+    }
+
+    .login-form__btn {
+        border: none;
+        padding: 1.2rem 0;
+        background-color: $primary-color;
+
+        .login-form__btn-icon {
+            font-size: 1.8rem;
+            right: 1rem;
+        }
+
+    }
+
+    .is-not-valid-btn {
+        opacity: .65;
+        background: #d40e18 !important;
+    }
+
+    .login-form__password-text {
+        font-size: 1.3rem;
+
+        @include responsivePage(XS) {
+            font-size: 1rem;
+        }
+    }
+
+    .login-form__password-forget-link {
+        font-size: 1.3rem;
+
+        @include responsivePage(XS) {
+            font-size: 1.1rem;
+        }
+    }
+
+    .login__des {
+        font-size: 1.2rem;
+    }
+
+    .login__des-list {
+        list-style-type: disc;
+    }
+}
