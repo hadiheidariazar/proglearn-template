@@ -1,0 +1,137 @@
+@import "./../../custom";
+
+.courses {
+    margin: 4rem 0;
+}
+
+.courses-top-bar {
+    box-shadow: 0 0 13px 1px #46484d14;
+
+    @include responsivePage(S) {
+        flex-direction: column-reverse !important;
+        gap: 1.3rem;
+    }
+
+    .courses-top-bar__right {
+        @include responsivePage(S) {
+            width: 90% !important;
+        }
+    }
+
+    .courses-top-bar__selection {
+        cursor: pointer;
+
+        @include responsivePage(M) {
+            font-size: 1.2rem;
+        }
+
+        @include responsivePage(S) {
+            width: 100% !important;
+            font-size: 1.5rem;
+        }
+
+        @include responsivePage(XS) {
+            font-size: 1.2rem;
+        }
+
+        .courses-top-bar__selection-title {
+            @include responsivePage(S) {
+                justify-content: center;
+            }
+        }
+
+    }
+
+    .courses-top-bar__selection-title {
+        border: 1px solid #e5e5e5;
+        transition: all .3s ease;
+
+        &:hover {
+            color: #fff !important;
+            background-color: #1e83f0;
+        }
+    }
+
+    .courses-top-bar__selection-list {
+        opacity: 0;
+        visibility: hidden;
+        box-shadow: 0 0 6px #00000033;
+        border-radius: 0 0 0.3rem 0.3rem;
+        border-bottom: 0.3rem solid $primary-color;
+        z-index: 99;
+        transition: all .3s ease;
+
+        .courses-top-bar__selection-item {
+            color: #5f5f5f;
+            font-size: 1.4rem;
+            padding: 0.9rem 1.4rem;
+            transition: all .3s ease;
+
+            &:hover {
+                background-color: #ddd;
+            }
+
+            @include responsivePage(M) {
+                font-size: 1.2rem;
+            }
+    
+            @include responsivePage(S) {
+                font-size: 1.5rem;
+            }
+    
+            @include responsivePage(XS) {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+
+    .courses-top-bar__selection-item--active {
+        background-color: #ddd !important;
+    }
+
+    .courses-top-bar__selection:hover .courses-top-bar__selection-list {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .courses-top-bar__left {
+        @include responsivePage(S) {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+
+    .courses-top-bar__form {
+        width: 25rem;
+
+        @include responsivePage(M) {
+            width: 17rem;
+        }
+
+        @include responsivePage(S) {
+            width: 90% !important;
+        }
+
+        .courses-top-bar__input {
+            font-size: 1.5rem;
+            border: 1px solid #dcdcdc;
+            padding: 0.8rem 1.5rem 0.8rem 3.5rem;
+
+            @include responsivePage(M) {
+                font-size: 1.2rem;
+            }
+
+            @include responsivePage(S) {
+                width: 100% !important;
+            }
+        }
+    }
+
+    .courses-top-bar__search-icon {
+        left: 1rem;
+        top: 1rem;
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+}
