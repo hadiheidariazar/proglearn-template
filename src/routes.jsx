@@ -1,4 +1,5 @@
 import Category from "./Pages/Category/Category";
+import ContactUs from "./Pages/ContactUs/ContactUs";
 import CourseInfo from "./Pages/CourseInfo/CourseInfo";
 import Courses from "./Pages/Courses/Courses";
 import Home from "./Pages/Home/Home";
@@ -10,6 +11,7 @@ const routes = [
     { path: '/courses', element: <Courses /> },
     { path: '/course/:courseName', element: <CourseInfo /> },
     {path: '/category/:categoryName', element: <Category />},
+    {path: '/contact-us', element: <ContactUs />},
     { path: '/login', element: <Login /> },
     { path: '/register', element: <Register /> },
 ]

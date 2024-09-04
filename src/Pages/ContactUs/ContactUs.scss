@@ -1,0 +1,85 @@
+/* ============================== Contact Us Style ============================== */
+
+@import "./../../custom";
+
+.contact-us-section {
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -5rem;
+        width: 150%;
+        height: 380px;
+        background-color: $primary-color;
+        z-index: -1;
+        transform: rotate(-4deg);
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 150%;
+        height: 380px;
+        background-color: #31cc5a99;
+        z-index: -9999;
+        transform: rotate(-4deg);
+    }
+}
+
+.contact-us {
+    flex-direction: column;
+    margin: 4rem 0;
+    box-shadow: 0 6px 20px rgba(168, 172, 185, 0.3);
+    width: 50rem;
+    border-bottom: 5px solid #2bce56;
+}
+
+.contact-us__title {
+    font-size: 2.2rem;
+}
+
+.contact-us__subtitle {
+    font-size: 1.5rem;
+}
+
+.contact-us-form__username-input,
+.contact-us-form__password-input {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06);
+    font-size: 1.4rem;
+    border: 1px solid #e7e7e7;
+
+    &:focus {
+        border: 1px solid #21adee;
+    }
+}
+
+.contact-us-form__username-icon,
+.contact-us-form__password-icon {
+    position: absolute;
+    left: 1.2rem;
+    top: 2rem;
+    font-size: 2.2rem;
+
+    @include responsivePage(XS) {
+        left: 1.1rem;
+        font-size: 2rem;
+    }
+}
+
+.contact-us-form__text-input {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06);
+    font-size: 1.4rem;
+    border: 1px solid #e7e7e7;
+
+    &:focus {
+        border: 1px solid #21adee;
+    }
+}
+
+.contact-us-form__btn {
+    background-color: $primary-color;
+    border: none;
+}
+
+/* ============================== Contact Us Style ============================== */
