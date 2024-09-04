@@ -39,7 +39,7 @@ export default function Login() {
                             ثبت نام
                         </a>
                     </div>
-                    <form className="login-form w-100" onClick={event => event.preventDefault()}>
+                    <form className="login-form w-100" onSubmit={event => event.preventDefault()}>
                         <div className="login-form__username position-relative">
                             <input
                                 id="username"
