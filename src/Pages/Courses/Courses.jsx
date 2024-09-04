@@ -4,7 +4,7 @@ import Navbar from '../../Components/Navbar/Navbar'
 import Footer from '../../Components/Footer/Footer'
 import CourseBox from '../../Components/CourseBox/CourseBox'
 import TitlePage from '../../Components/TitlePage/TitlePage'
-import Breadcrumb from '../../Components/BreadCrumb/BreadCrumb'
+import Breadcrumb from '../../Components/Breadcrumb/BreadCrumb'
 import "./Courses.css"
 
 export default function Courses() {
