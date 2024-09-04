@@ -1,3 +1,4 @@
+import Article from "./Pages/Article/Article";
 import Articles from "./Pages/Articles/Articles";
 import Category from "./Pages/Category/Category";
 import ContactUs from "./Pages/ContactUs/ContactUs";
@@ -11,6 +12,7 @@ const routes = [
     { path: '', element: <Home /> },
     { path: '/courses', element: <Courses /> },
     { path: '/articles', element: <Articles /> },
+    {path: '/article/:articleName', element: <Article />},
     { path: '/course/:courseName', element: <CourseInfo /> },
     {path: '/category/:categoryName', element: <Category />},
     {path: '/contact-us', element: <ContactUs />},

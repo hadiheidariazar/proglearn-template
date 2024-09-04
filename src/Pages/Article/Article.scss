@@ -1,0 +1,174 @@
+@import "./../../custom";
+
+/* Start Article Details Styles */
+
+.article {
+    box-shadow: 0 5px 30px #46484d14;
+
+    .article__title {
+        font-size: 2.2rem;
+        border-bottom: 2px solid #f3f3f3;
+
+        @include responsivePage(M) {
+            font-size: 1.8rem;
+        }
+
+        @include responsivePage(S) {
+            font-size: 1.7rem;
+        }
+    }
+
+    .article__header {
+        @include responsivePage(S) {
+            align-items: start !important;
+        }
+    }
+
+    .article-header__icon {
+        font-size: 1.7rem;
+    }
+
+    .article-header__text {
+        font-size: 1.2rem;
+    }
+
+    .article__banner {
+        margin-top: 4rem;
+    }
+
+    .article__score-icon {
+        margin-left: -0.4rem;
+
+        @include responsivePage(S) {
+            width: 1.3rem;
+        }
+    }
+
+    .article__score-text {
+        font-size: 1.7rem;
+
+        @include responsivePage(S) {
+            font-size: 1.3rem;
+        }
+    }
+
+    .article-read {
+        border-radius: 3rem;
+
+        .article-read__title {
+            color: #333333;
+            font-size: 1.5rem;
+
+            @include responsivePage(S) {
+                font-size: 1.3rem;
+            }
+        }
+
+        .article-read__link {
+            line-height: 2rem;
+            font-size: 1.5rem;
+
+            @include responsivePage(S) {
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    .article__seconadary-banner {
+        max-height: 600px;
+    }
+
+    .article-section {
+        margin: 6rem 0;
+
+        img {
+            max-width: 100%;
+        }
+
+        li {
+            list-style: disc;
+            margin: 10px 0;
+            line-height: 2.2rem !important;
+            
+            strong {
+                margin: 15px 0 10px 0;
+                display: inline-block;
+            }
+
+            &::marker {
+                color: $primary-color;
+            }
+        }
+
+        h2 {
+            font-size: 2.1rem;
+            line-height: 2.5rem;
+            font-weight: bold;
+            color: $primary-color;
+
+            @include responsivePage(M) {
+                font-size: 1.9rem;
+            }
+
+            @include responsivePage(S) {
+                font-size: 1.7rem;
+            }
+        }
+
+        p {
+            margin: 1rem 0;
+            color: #555;
+            line-height: 2.2rem;
+            font-size: 1.5rem;
+
+            @include responsivePage(S) {
+                font-size: 1.23rem;
+                line-height: 1.8rem;
+            }
+        }
+    }
+
+
+    .article-social-media__text {
+        font-size: 1.5rem;
+    }
+}
+
+.suggestion-articles {
+    margin: 4rem 0;
+    padding: 3.5rem 2.5rem;
+
+    .suggestion-articles__left {
+        flex-direction: row-reverse;
+
+        &::before {
+            content: "جدید تر";
+            position: absolute;
+            top: -2rem;
+            right: 2rem;
+            font-size: 1.5rem;
+            color: #adb5db;
+        }
+    }
+
+    .suggestion-articles__right::before {
+        content: "قدیمی تر";
+        position: absolute;
+        top: -2rem;
+        left: 2rem;
+        font-size: 1.8rem;
+        color: #adb5db;
+        font-weight: bold;
+        transform: rotate(180deg);
+    }
+
+    .suggestion-articles__link {
+        @include responsivePage(S) {
+            font-size: 1.3rem;
+        }
+    }
+}
+
+/* Start Helper Classes */
+
+/* Finish Helper Classes */
