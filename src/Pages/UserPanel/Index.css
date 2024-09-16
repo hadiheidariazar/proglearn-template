@@ -179,6 +179,11 @@ body {
   color: #fff !important;
 }
 
+.active {
+  color: #fff !important;
+  background-color: #13af3d !important;
+}
+
 .btn-logout-account {
   border: none;
   background: none;
@@ -392,4 +397,9 @@ textarea:focus {
 .edit-my-details-input {
   font-size: 1.3rem !important;
   background: #ebeef5 !important;
+}
+
+.btn-toggle-offcanvas {
+  width: 31px;
+  height: 31px;
 }/*# sourceMappingURL=Index.css.map */
