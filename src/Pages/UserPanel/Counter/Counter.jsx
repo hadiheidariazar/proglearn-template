@@ -2,7 +2,7 @@ import React from 'react'
 import { RxRocket } from 'react-icons/rx'
 import { BsTicketDetailed } from 'react-icons/bs'
 import InfosBox from '../../../Components/UserPanel/InfosBox/InfosBox'
-import TitlePage from '../../TitlePage/TitlePage'
+import TitlePage from '../../../Components/TitlePage/TitlePage'
 
 export default function Counter() {
     return (
