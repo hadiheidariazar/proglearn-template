@@ -1,0 +1,395 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: IRANSans;
+  src: url("./fonts/IRANSans.ttf");
+}
+html {
+  box-sizing: border-box !important;
+  font-size: 62.5% !important;
+}
+
+body {
+  line-height: 1.8rem !important;
+  font-size: 1.6rem !important;
+  font-family: IRANSans !important;
+  word-spacing: -2px !important;
+  background-color: #f7f7f7 !important;
+  direction: rtl !important;
+}
+
+*,
+*::after,
+*::before {
+  outline: none !important;
+  box-sizing: inherit !important;
+}
+
+a {
+  text-decoration: none !important;
+  color: #1b1b1b !important;
+  transition: all 0.3s ease !important;
+}
+
+a:hover {
+  color: #13af3d !important;
+}
+
+i {
+  -webkit-user-select: none !important;
+     -moz-user-select: none !important;
+          user-select: none !important;
+}
+
+.bg-main-color {
+  background-color: #13af3d !important;
+}
+
+.text-main-color {
+  color: #13af3d !important;
+}
+
+.bg-dark-color {
+  background-color: #1b1b1b !important;
+}
+
+.text-dark-color {
+  color: #1b1b1b !important;
+}
+
+.bg-secondary-500 {
+  background-color: #ebeef5 !important;
+}
+
+.text-secondary-500 {
+  color: #ebeef5 !important;
+}
+
+.fs-7 {
+  font-size: 0.85rem !important;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.circle {
+  -webkit-clip-path: circle();
+          clip-path: circle();
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: iranSans;
+}
+
+.offcanvas-sidebar-my-account {
+  width: 250px !important;
+  height: 100vh !important;
+}
+@media screen and (max-width: 576px) {
+  .offcanvas-sidebar-my-account {
+    width: 190px !important;
+  }
+}
+.offcanvas-sidebar-my-account .offcanvas-image {
+  width: 100px !important;
+}
+
+.sidebar-header-bottom {
+  border: none !important;
+}
+
+.sidebar {
+  height: -moz-max-content;
+  height: max-content;
+}
+.sidebar .sidebar-header-img {
+  margin-bottom: 5rem;
+}
+.sidebar .sidebar-header-img img {
+  width: 120px;
+}
+.sidebar .sidebar-link {
+  transition: all 0.3s !important;
+}
+.sidebar .sidebar-link:hover {
+  background: #13af3d;
+  color: #fff !important;
+}
+
+.active:hover {
+  color: #fff !important;
+}
+
+.btn-logout-account {
+  border: none;
+  background: none;
+}
+
+.sidebar-left {
+  padding: 30px 40px 30px 50px !important;
+}
+.sidebar-left .content-sidebar {
+  border-radius: 3rem;
+  min-height: calc(100vh - 60px) !important;
+  height: -moz-max-content !important;
+  height: max-content !important;
+}
+@media screen and (max-width: 991px) {
+  .sidebar-left .content-sidebar {
+    border-radius: 0px;
+    min-height: 100vh !important;
+    height: -moz-max-content !important;
+    height: max-content !important;
+  }
+}
+.sidebar-left .topbar {
+  background: none;
+}
+.sidebar-left .topbar .username {
+  max-width: 220px !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@media screen and (max-width: 991px) {
+  .sidebar-left .topbar .username {
+    line-height: 2.4rem;
+    max-width: -moz-max-content !important;
+    max-width: max-content !important;
+    overflow: visible !important;
+    text-overflow: none !important;
+    white-space: none !important;
+  }
+}
+.sidebar-left .topbar .side-left img {
+  width: 45px;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+}
+.sidebar-left .topbar .btn-home-page-icon {
+  font-size: 2rem;
+}
+.sidebar-left .topbar .img-spinner {
+  width: 35px;
+  height: 35px;
+}
+@media screen and (max-width: 991px) {
+  .sidebar-left {
+    padding: 0 !important;
+  }
+}
+
+.sidebar-box-infos {
+  margin-bottom: 7rem;
+}
+@media screen and (max-width: 576px) {
+  .sidebar-box-infos {
+    margin-bottom: 4rem;
+  }
+}
+.sidebar-box-infos .courses-box {
+  background: #0693e3 !important;
+}
+.sidebar-box-infos .courses-box .icon-box {
+  background: #31a0e0 !important;
+  width: -moz-max-content;
+  width: max-content;
+}
+.sidebar-box-infos .free-courses-box {
+  background: #fcb900 !important;
+}
+.sidebar-box-infos .free-courses-box .icon-box {
+  background: #f7ca51 !important;
+  width: -moz-max-content;
+  width: max-content;
+}
+.sidebar-box-infos .money-courses-box {
+  background: #00d084 !important;
+}
+.sidebar-box-infos .money-courses-box .icon-box {
+  background: #60daad !important;
+  width: -moz-max-content;
+  width: max-content;
+}
+.sidebar-box-infos svg {
+  font-size: 7rem;
+  padding: 1.8rem;
+  color: #fff;
+}
+.sidebar-box-infos .tickets-box {
+  background: #ee2c82 !important;
+}
+.sidebar-box-infos .tickets-box .icon-box {
+  background: #ec4791 !important;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.counter-text {
+  line-height: 2.3rem;
+}
+
+.money-courses {
+  margin-bottom: 4rem;
+}
+
+.desc-box {
+  font-size: 1.3rem !important;
+  line-height: 2rem;
+}
+
+.title-box {
+  line-height: 2rem;
+  font-size: 1.3rem;
+}
+
+.title-section {
+  border-bottom: 1px solid #ccc;
+}
+
+select:focus,
+input:focus,
+textarea:focus {
+  box-shadow: none !important;
+}
+
+#title-ticket,
+#description-ticket {
+  font-size: 1.4rem !important;
+}
+
+.ticket-container {
+  max-width: 80% !important;
+  width: -moz-max-content !important;
+  width: max-content !important;
+}
+@media screen and (max-width: 576px) {
+  .ticket-container {
+    max-width: 90% !important;
+  }
+}
+
+.ticket-item {
+  transition: 0.25s;
+}
+.ticket-item:hover {
+  background: #eff3ef;
+}
+.ticket-item .title-ticket {
+  line-height: 2.2rem;
+  font-size: 1.5rem;
+}
+.ticket-item .replyed {
+  background: rgba(46, 213, 116, 0.2549019608);
+  color: #2ed573;
+  font-size: 1.2rem;
+}
+.ticket-item .no-replyed {
+  background: rgba(213, 46, 68, 0.2549019608);
+  color: #d52e44;
+  font-size: 1.2rem;
+}
+.ticket-item .department {
+  font-size: 1.2rem;
+  color: #ffb007;
+  background: rgba(241, 192, 42, 0.2588235294);
+}
+.ticket-item .date {
+  font-size: 1.2rem;
+}
+
+.ticket-infos h3 {
+  line-height: 2.2rem;
+  font-size: 1.5rem;
+}
+.ticket-infos .ticket-body {
+  border-radius: 15px 0px 15px 15px;
+  background: #f1f1f1;
+}
+.ticket-infos .created-at-ticket {
+  font-size: 1.2rem;
+}
+.ticket-infos .ticket-body-text {
+  font-size: 1.3rem;
+}
+
+.reply-ticket-body {
+  direction: rtl;
+  background: #f1f1f1;
+  border-radius: 0px 15px 15px 15px;
+}
+.reply-ticket-body .reply-ticket-body-text {
+  font-size: 1.3rem;
+}
+
+.details-value {
+  font-size: 1.3rem;
+}
+
+.title-details {
+  font-size: 1.3rem;
+}
+
+.edit-my-details-input {
+  font-size: 1.3rem !important;
+  background: #ebeef5 !important;
+}/*# sourceMappingURL=Index.css.map */
