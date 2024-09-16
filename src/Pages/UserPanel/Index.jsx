@@ -18,7 +18,7 @@ export default function Index() {
                                         <img src="/images/logo/Logo.png" alt="ProgLearn Logo" className='img-fluid' />
                                     </a>
                                 </div>
-                                <Sidebar isAdmin={true} />
+                                <Sidebar />
                             </div>
                         </div>
                         <div className="col-12 col-lg-9 sidebar-left">
@@ -27,7 +27,7 @@ export default function Index() {
                                     <div className="row mb-5">
                                         <div className="col-12 d-flex justify-content-between align-items-center">
                                             <div className="side-right d-flex align-items-center">
-                                                <OffcanvasMenu isAdmin={true} />
+                                                <OffcanvasMenu />
                                                 <h3 className='fw-bold d-none d-lg-flex align-items-center'>
                                                     <span className='username d-inline-block me-1 px-1'>
                                                         هادی حیدری آذر
