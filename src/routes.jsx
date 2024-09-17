@@ -10,6 +10,7 @@ import Register from "./Pages/Register/Register";
 import Counter from "./Pages/UserPanel/Counter/Counter";
 import UserPanel from "./Pages/UserPanel/Index";
 import UserCourses from "./Pages/UserPanel/UserCourses/UserCourses";
+import UserDetails from "./Pages/UserPanel/UserDetails/UserDetails";
 import UserTickets from "./Pages/UserPanel/UserTickets/UserTickets";
 
 const routes = [
@@ -26,6 +27,7 @@ const routes = [
         {path: '', element: <Counter />},
         {path: "courses", element: <UserCourses />},
         {path: "tickets", element: <UserTickets />},
+        {path: "details", element: <UserDetails />},
     ] }
 ]
 
