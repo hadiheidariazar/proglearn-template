@@ -9,6 +9,7 @@ import Login from "./Pages/Login/Login";
 import Register from "./Pages/Register/Register";
 import Counter from "./Pages/UserPanel/Counter/Counter";
 import UserPanel from "./Pages/UserPanel/Index";
+import UserCourses from "./Pages/UserPanel/UserCourses/UserCourses";
 
 const routes = [
     { path: '', element: <Home /> },
@@ -21,7 +22,8 @@ const routes = [
     { path: '/login', element: <Login /> },
     { path: '/register', element: <Register /> },
     { path: '/my-account/*', element: <UserPanel />, children: [
-        {path: '', element: <Counter />}
+        {path: '', element: <Counter />},
+        {path: "courses", element: <UserCourses />},
     ] }
 ]
 
