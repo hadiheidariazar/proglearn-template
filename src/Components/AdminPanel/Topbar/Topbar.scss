@@ -1,0 +1,16 @@
+.home-profile-name {
+    max-width: 180px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    a {
+        width: inherit;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}
+
+.home-profile-image img {
+    width: 50px !important;
+}
