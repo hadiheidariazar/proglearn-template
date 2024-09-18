@@ -1,0 +1,101 @@
+@import "./../../../custom";
+
+#sidebar {
+    background-color: #17203f;
+    height: 100vh;
+}
+
+.sidebar-header {
+    border-bottom: 1px solid rgba(131, 131, 131, 0.63);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    img {
+        width: 70px;
+    }
+}
+
+.sidebar-menu {
+    li:hover {
+        background: #353c50;
+        background: -webkit-gradient(linear,
+                left top,
+                right top,
+                from(#353c50),
+                to(rgba(0, 212, 255, 0)));
+        background: linear-gradient(90deg, #353c50 0%, rgba(0, 212, 255, 0) 100%);
+    }
+
+    li a {
+        -webkit-transition: all .2s ease;
+        transition: all .2s ease;
+        font-size: 1.5rem;
+
+        &:hover {
+            color: $primary-color !important;
+        }
+    }
+}
+
+.active-menu {
+    position: relative;
+    background: #353c50;
+    background: -webkit-gradient(linear,
+            left top,
+            right top,
+            from(#353c50),
+            to(rgba(0, 212, 255, 0)));
+    background: linear-gradient(90deg, #353c50 0%, rgba(0, 212, 255, 0) 100%);
+    color: $primary-color !important;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #4869ff;
+        width: 5px;
+        height: 100%;
+    }
+}
+
+.btn-toggle-offcanvas {
+    font-size: 3.2rem;
+
+    @include responsivePage(XS) {
+        font-size: 2.8rem;
+    }
+}
+
+.offcanvas-sidebar {
+    width: 200px !important;
+}
+
+.sidebar-header-bottom {
+    border-bottom: 1px solid rgba(131, 131, 131, 0.63);
+}
+
+.sidebar-header-not-bottom {
+    border-bottom: none !important;
+}
+
+.logout-btn {
+    background: none;
+    border: none;
+    transition: all .2s ease;
+
+    &:hover {
+        color: $primary-color !important;
+    }
+}
+
+.nav-item {
+    color: #fff !important;
+}
