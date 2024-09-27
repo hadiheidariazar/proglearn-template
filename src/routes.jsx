@@ -15,6 +15,7 @@ import UserTickets from "./Pages/UserPanel/UserTickets/UserTickets";
 import AdminPanel from "./Pages/AdminPanel/Index";
 import MainPage from "./Pages/AdminPanel/MainPage/MainPage";
 import AdminCourses from "./Pages/AdminPanel/AdminCourses/AdminCourses";
+import AdminSessions from "./Pages/AdminPanel/AdminSessions/AdminSessions";
 
 const routes = [
     { path: '', element: <Home /> },
@@ -38,6 +39,7 @@ const routes = [
         path: '/panel-admin/*', element: <AdminPanel />, children: [
             { path: "", element: <MainPage /> },
             {path: "courses", element: <AdminCourses />},
+            {path: "sessions", element: <AdminSessions />},
         ]
     },
 ]
