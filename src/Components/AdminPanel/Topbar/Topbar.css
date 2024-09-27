@@ -1,7 +1,3 @@
-.home-profile {
-  direction: rtl;
-}
-
 .home-profile-name {
   max-width: 180px;
   text-overflow: ellipsis;
