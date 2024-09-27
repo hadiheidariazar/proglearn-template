@@ -1,8 +1,13 @@
+.home-profile {
+  direction: rtl;
+}
+
 .home-profile-name {
   max-width: 180px;
   text-overflow: ellipsis;
   overflow: hidden;
 }
+
 .home-profile-name a {
   width: inherit;
   white-space: nowrap;
@@ -12,4 +17,6 @@
 
 .home-profile-image img {
   width: 50px !important;
-}/*# sourceMappingURL=Topbar.css.map */
+}
+
+/*# sourceMappingURL=Topbar.css.map */

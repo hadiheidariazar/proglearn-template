@@ -13,7 +13,7 @@ import { FaComments } from 'react-icons/fa'
 export default function SidebarList({ setShow }) {
 
     const homePage = useRef()
-    
+
     const navigate = useNavigate()
 
     const logoutAdmin = (event) => {
@@ -24,6 +24,7 @@ export default function SidebarList({ setShow }) {
             icon: 'success',
             buttons: 'متوجه شدم !'
         }).then(() => {
+            authContext.logout()
             navigate('/')
         })
     }
@@ -54,7 +55,7 @@ export default function SidebarList({ setShow }) {
 
     return (
         <div className="sidebar-menu mt-3">
-            <ul className='p-0' style={{overflowY: 'auto'}}>
+            <ul className='p-0' style={{ overflowY: 'auto' }}>
                 <li onClick={event => isActiveMenu(event)}>
                     <NavLink className={(link) => link.isActive ? "active-menu d-block p-4" : 'nav-item d-block p-4'} to="/panel-admin" ref={homePage}>
                         <AiFillHome className='me-2' />

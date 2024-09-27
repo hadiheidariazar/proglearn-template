@@ -7,7 +7,7 @@ export default function Topbar() {
         <div className="container-fluid">
             <div className="home-header mt-4 d-block">
                 <div className="home-left">
-                    <div className="home-profile">
+                    <div className="home-profile d-flex align-items-center">
                         <OffcanvasMenu />
                         <div className="home-profile-image me-3">
                             <a href="/my-account">
