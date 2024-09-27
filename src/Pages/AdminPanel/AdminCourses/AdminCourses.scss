@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "vazir";
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: #000;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.select-category {
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+    border: 1px solid #a6a6a6 !important;
+    font-size: 14px !important;
+    color: #000 !important;
+
+    &:focus {
+        box-shadow: none !important;
+    }
+}
+
+.course-description {
+    border: 1px solid #a6a6a6;
+    font-size: 14px !important;
+    color: #000 !important;
+
+    &:focus {
+        box-shadow: none !important;
+    }
+}
