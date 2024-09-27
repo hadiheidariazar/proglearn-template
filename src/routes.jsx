@@ -13,6 +13,7 @@ import UserCourses from "./Pages/UserPanel/UserCourses/UserCourses";
 import UserDetails from "./Pages/UserPanel/UserDetails/UserDetails";
 import UserTickets from "./Pages/UserPanel/UserTickets/UserTickets";
 import AdminPanel from "./Pages/AdminPanel/Index";
+import MainPage from "./Pages/AdminPanel/MainPage/MainPage";
 
 const routes = [
     { path: '', element: <Home /> },
@@ -32,7 +33,11 @@ const routes = [
             { path: "details", element: <UserDetails /> },
         ]
     },
-    { path: '/panel-admin', element: <AdminPanel /> }
+    {
+        path: '/panel-admin/*', element: <AdminPanel />, children: [
+            { path: "", element: <MainPage /> },
+        ]
+    },
 ]
 
 export default routes
