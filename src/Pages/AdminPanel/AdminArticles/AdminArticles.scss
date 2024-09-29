@@ -1,0 +1,17 @@
+@import "./../../../custom";
+
+.article-description {
+    height: 50px;
+
+    @include responsivePage(M) {
+        height: 80px;
+    }
+
+    @include responsivePage(S) {
+        height: 125px;
+    }
+}
+
+.draft-article:hover {
+    color: #fff !important;
+}
