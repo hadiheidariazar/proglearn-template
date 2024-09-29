@@ -1,17 +1,29 @@
 <!doctype html>
 <html dir="rtl" lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content='با آکادمی پروگ لرن برنامه نویسی رو با خیال راحت یاد بگیر و پیشرفت کن'>
-    <link rel="icon" href="./public/images/logo/header-logo.png">
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.rtl.min.css">
-    <link rel="stylesheet" href="./node_modules/swiper/swiper.css">
-    <link rel="stylesheet" href="./src/reset.css">
-    <title></title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content='با آکادمی پروگ لرن برنامه نویسی رو با خیال راحت یاد بگیر و پیشرفت کن'>
+  <link rel="icon" href="./public/images/logo/header-logo.png">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="./node_modules/swiper/swiper.css">
+  <link rel="stylesheet" href="./src/reset.css">
+  <title></title>
+</head>
+
+<body class="overflow-hidden">
+  <div class="loader-page">
+    <div class="custom-loader"></div>
+  </div>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+  <script>
+    window.addEventListener('load', () => {
+      document.body.classList.remove('overflow-hidden')
+      document.querySelector('.loader-page').classList.add('hidden')
+    })
+  </script>
+</body>
+
 </html>
