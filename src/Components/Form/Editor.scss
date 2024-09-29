@@ -1,0 +1,40 @@
+@import "./../../custom";
+
+.ck-editor__editable_inline {
+    text-align: right !important;
+    direction: rtl !important;
+}
+
+
+.ck-sticky-panel__content {
+    direction: rtl !important;
+    
+    .ck-toolbar__items {
+        @include responsivePage(S) {
+            flex-wrap: wrap !important;
+        }
+
+        .ck-dropdown__panel {
+            overflow: visible !important;
+        }
+    }
+    
+    .ck {
+
+        @include responsivePage(L) {
+            font-size: 1.1rem !important;
+        }
+
+        @include responsivePage(M) {
+            font-size: .85rem !important;
+            font-weight: bold !important;
+        }
+    }
+}
+
+.ck-editor__editable_inline {
+    max-height: 400px !important;
+    @include responsivePage(S) {
+        font-size: 1.2rem !important;
+    }
+}
