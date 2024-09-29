@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "vazir";
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: #000;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.form .input {
+    margin: 5px 15px;
+}
+
+.form .input input {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border-radius: 3px;
+    border: none;
+    border: 1px solid #a6a6a6;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.form .input input::-webkit-input-placeholder {
+    font-size: 13px;
+}
+
+.form .input input:-ms-input-placeholder {
+    font-size: 13px;
+}
+
+.form .input input::-ms-input-placeholder {
+    font-size: 13px;
+}
+
+.form .input input::placeholder {
+    font-size: 13px;
+}
+
+.form .input .input-title {
+    font-size: 18px;
+    font-family: "lalezar";
+}
+
+.form .bottom-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 5px 15px;
+}
+
+.form .bottom-form .submit-btn {
+    margin-top: 5px;
+}
+
+.form .bottom-form .submit-btn input {
+    background-color: #2774f5;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    padding: 5px 20px;
+}
+
+.btn-footer-modal {
+    width: calc(50% - 2rem);
+}
+
+.btn-close:focus {
+    box-shadow: none !important;
+}

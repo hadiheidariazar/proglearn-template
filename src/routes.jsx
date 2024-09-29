@@ -23,6 +23,7 @@ import Users from "./Pages/AdminPanel/Users/Users";
 import AdminComments from "./Pages/AdminPanel/AdminComments/AdminComments";
 import AdminDiscount from "./Pages/AdminPanel/AdminDiscount/AdminDiscount";
 import AdminContactUsTickets from "./Pages/AdminPanel/AdminContactUsTickets/AdminContactUsTickets";
+import AdminCategories from "./Pages/AdminPanel/AdminCategories/AdminCategories";
 
 const routes = [
     { path: '', element: <Home /> },
@@ -53,6 +54,7 @@ const routes = [
             { path: "users", element: <Users /> },
             { path: "comments", element: <AdminComments /> },
             { path: "discount-codes", element: <AdminDiscount /> },
+            {path: "categories", element: <AdminCategories />},
             { path: "contact-us-tickets", element: <AdminContactUsTickets /> },
         ]
     },

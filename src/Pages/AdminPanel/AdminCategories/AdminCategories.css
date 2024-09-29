@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "vazir";
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: #000;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form .input {
+  margin: 5px 15px;
+}
+
+.form .input input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+  border: none;
+  border: 1px solid #a6a6a6;
+  transition: all 0.2s ease;
+}
+
+.form .input input::-moz-placeholder {
+  font-size: 13px;
+}
+
+.form .input input::placeholder {
+  font-size: 13px;
+}
+
+.form .input .input-title {
+  font-size: 18px;
+  font-family: "lalezar";
+}
+
+.form .bottom-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 15px;
+}
+
+.form .bottom-form .submit-btn {
+  margin-top: 5px;
+}
+
+.form .bottom-form .submit-btn input {
+  background-color: #2774f5;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  padding: 5px 20px;
+}
+
+.btn-footer-modal {
+  width: calc(50% - 2rem);
+}
+
+.btn-close:focus {
+  box-shadow: none !important;
+}/*# sourceMappingURL=AdminCategories.css.map */
