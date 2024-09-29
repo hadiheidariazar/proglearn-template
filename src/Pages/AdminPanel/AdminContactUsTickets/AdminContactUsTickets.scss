@@ -1,0 +1,25 @@
+.btn-footer-modal {
+    width: calc(50% - 2rem);
+}
+
+.btn-close:focus {
+    box-shadow: none !important;
+}
+
+.input textarea {
+    font-size: 13px;
+
+    &:focus {
+        box-shadow: none !important;
+    }
+}
+
+.show-ticket-body {
+    max-height: 220px;
+    overflow-y: auto;
+
+    .ticket-body-text {
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+    }
+}

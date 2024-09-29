@@ -22,6 +22,7 @@ import Draft from "./Components/Draft";
 import Users from "./Pages/AdminPanel/Users/Users";
 import AdminComments from "./Pages/AdminPanel/AdminComments/AdminComments";
 import AdminDiscount from "./Pages/AdminPanel/AdminDiscount/AdminDiscount";
+import AdminContactUsTickets from "./Pages/AdminPanel/AdminContactUsTickets/AdminContactUsTickets";
 
 const routes = [
     { path: '', element: <Home /> },
@@ -52,6 +53,7 @@ const routes = [
             { path: "users", element: <Users /> },
             { path: "comments", element: <AdminComments /> },
             { path: "discount-codes", element: <AdminDiscount /> },
+            { path: "contact-us-tickets", element: <AdminContactUsTickets /> },
         ]
     },
 ]
