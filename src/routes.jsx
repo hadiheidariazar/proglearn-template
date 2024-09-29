@@ -21,6 +21,7 @@ import AdminArticles from "./Pages/AdminPanel/AdminArticles/AdminArticles";
 import Draft from "./Components/Draft";
 import Users from "./Pages/AdminPanel/Users/Users";
 import AdminComments from "./Pages/AdminPanel/AdminComments/AdminComments";
+import AdminDiscount from "./Pages/AdminPanel/AdminDiscount/AdminDiscount";
 
 const routes = [
     { path: '', element: <Home /> },
@@ -50,6 +51,7 @@ const routes = [
             { path: "articles/draft/:shortName", element: <Draft /> },
             { path: "users", element: <Users /> },
             { path: "comments", element: <AdminComments /> },
+            { path: "discount-codes", element: <AdminDiscount /> },
         ]
     },
 ]
