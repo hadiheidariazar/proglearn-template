@@ -20,6 +20,7 @@ import Menus from "./Pages/AdminPanel/Menus/Menus";
 import AdminArticles from "./Pages/AdminPanel/AdminArticles/AdminArticles";
 import Draft from "./Components/Draft";
 import Users from "./Pages/AdminPanel/Users/Users";
+import AdminComments from "./Pages/AdminPanel/AdminComments/AdminComments";
 
 const routes = [
     { path: '', element: <Home /> },
@@ -48,6 +49,7 @@ const routes = [
             { path: "articles", element: <AdminArticles /> },
             { path: "articles/draft/:shortName", element: <Draft /> },
             { path: "users", element: <Users /> },
+            { path: "comments", element: <AdminComments /> },
         ]
     },
 ]
