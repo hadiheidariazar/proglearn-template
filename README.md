@@ -5,7 +5,7 @@
 ## About Project
 Ready site template for learning programming called proglearn
 
-### See <a href='https://proglearn.liara.run'>Demo</a>
+### See <a href='https://academyproglearn.vercel.app'>Demo</a>
 
 ## Getting Started
 First, run the development server
